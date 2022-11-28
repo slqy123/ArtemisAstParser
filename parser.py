@@ -34,7 +34,8 @@ def parse(src: str, output: str, encoding: str):
         if os.path.isdir(output):
             dst = os.path.join(output, os.path.basename(src).rsplit('.', 1)[0] + '.json')
         print(src)
-        ast.parse(src, encoding=encoding, save_path=dst)
+        with open(src, encoding=encoding) as f:
+            ast.parse(f.read(), encoding=encoding, save_path=dst)
 
 
 if __name__ == '__main__':

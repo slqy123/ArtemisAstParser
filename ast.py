@@ -1,18 +1,25 @@
 from ply.lex import lex
 from ply.yacc import yacc
 
-tokens = ('NUMBER', 'COMMA', 'LPAREN', 'RPAREN', 'NAME', 'EQUAL', 'STRING',)
+tokens = ('NUMBER', 'COMMA', 'LPAREN', 'RPAREN', 'NAME', 'EQUAL', 'STRING', 'LL', 'RL')
 
 t_ignore = ' \t'
 t_COMMA = r','
 t_LPAREN = r'\{'
 t_RPAREN = r'\}'
-t_NAME = r'[a-zA-Z_\[][a-zA-Z0-9_\]]*'  # 在02_華乃10.ast出现了NAME=[50]的情况，仅此一例
+t_LL = r'\['
+t_RL = r'\]'
+t_NAME = r'[a-zA-Z_][a-zA-Z0-9_]*'  # 在02_華乃10.ast出现了NAME=[50]的情况，仅此一例
 t_EQUAL = r'='
 
 
+def t_ignore_VER(t):
+    r'astver[^\n]+\n'
+    return
+
+
 def t_STRING(t):
-    r'"[^"]+"'
+    r'"[^"]*"'
     t.value = t.value[1:-1]
     return t
 
@@ -27,17 +34,21 @@ def t_ignore_newline(t):
     r'\n+'
     t.lexer.lineno += t.value.count('\n')
 
-
+count = 0
 def t_error(t):
-    print(f'Illegal character {t.value[0]!r}')
+    global count
+    print(f'Illegal character {t.value[0]!r}', t.lexer.lineno)
+    count += 1
+    if count > 10:
+        exit(0)
     t.lexer.skip(1)
 
 
 def p_kwarg(p):
-    """kwarg : NAME EQUAL STRING
-    | NAME EQUAL NUMBER
-    | NAME EQUAL block
-    | NAME EQUAL arg"""
+    """kwarg : name EQUAL STRING
+    | name EQUAL NUMBER
+    | name EQUAL block
+    | name EQUAL arg"""
     p[0] = (p[1], p[3])
 
 
@@ -46,6 +57,13 @@ def p_arg(p):
     | block"""
     p[0] = p[1]
 
+def p_list_name(p):
+    """name : LL STRING RL
+    | LL NUMBER RL"""
+    p[0] = str(p[2])
+def p_name_NAME(p):
+    """name : NAME"""
+    p[0] = p[1]
 
 def p_gen_block(p):
     """block : LPAREN params RPAREN"""
@@ -56,6 +74,7 @@ def p_gen_block(p):
         else:
             b['args'].append(item)
     p[0] = b
+
 
 
 def p_params(p):
@@ -75,6 +94,9 @@ def p_params_end_comma(p):
     'params : params COMMA'
     p[0] = p[1]
 
+def p_null_block(p):
+    """block : LPAREN RPAREN"""
+    p[0] = {'args': []}
 
 def p_error(p):
     print(f'Syntax error at {p.value!r}')
@@ -85,10 +107,11 @@ class Ast:
         self.lexer = lex()
         self.parser = yacc()
 
-    def parse(self, src: str, encoding: str = 'utf-8', save_path: str = '.') -> None:
-        with open(src, encoding='utf8') as f:
-            assert f.readline().startswith('astver')
-            txt = f.read()
+    def parse(self, txt: str, encoding: str = 'utf-8', save_path: str = './result.json') -> None:
+        #
+        # self.lexer.input(txt)
+        # for l in self.lexer:
+        #     print(l)
 
         result = self.parser.parse(txt)
         if isinstance(result, tuple):
@@ -101,4 +124,4 @@ class Ast:
 
 if __name__ == '__main__':
     ast = Ast()
-    ast.parse('a = {"123",}')
+    ast.parse('astver = 2.0\nast = {"123",}')
