@@ -1,0 +1,3201 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="ライフタイムリスペクト"},
+		{"bg", file="bg004a", path=":bg/", sync=0},
+		{"fg", ch="あすみ", size="no", mode=3, path=":fg/asu/no/", file="asu_noa0200", ex05="asu_noa0000", face="a0053", head="asu_noa", x=-230, lv=2.2, id=9, sync=0},
+		{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_noa0210", ex05="hiy_noa0010", face="a0032", head="hiy_noa", x=230, lv=2.2, id=10, sync=0},
+		{"extrans", time=2000},
+		{"bgm", file="bgm06"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_hiy_10026", ch="hiy"},
+			},
+			ja = {
+				{
+					name = {"妃愛"},
+					"「では、いってまいります」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 20,
+	},
+	block_00001 = {
+		{"fg", ch="あすみ", size="no", mode=3, path=":fg/asu/no/", file="asu_noa0200", ex05="asu_noa0000", face="a0055", head="asu_noa", x=-230, lv=2.2, id=9},
+		{"fgact", ch="あすみ", act="おじぎ", lv=2.2, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_asu_10012", ch="asu"},
+			},
+			ja = {
+				{
+					name = {"あすみ"},
+					"「私もいってまいります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 26,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんとなくデジャヴ。先月も似たような光景を見た覚えがある。ただ今回の場合は、見送る人間が二人に増えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 28,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本日から妃愛と錦さんは３泊４日の旅行に出る。学園の行事なので休むわけにはいかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 30,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それでも去年なら行かなかったのだろうけど、今年はお互いの思い出を作るために参加するらしい。行き先は京の都。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 32,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"集合場所は千玉から２０分の距離にある７つ先の駅で、新幹線の改札口にてクラスメイトたちと待ち合わせらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 34,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ただ妃愛は電車を使わず、錦さんと合流して、マネージャーさんの車で集合場所の駅へ向かう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 36,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その錦さんは、途中で拾ってもらえばいいのに、何故かうちまでやってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 38,
+	},
+	block_00008 = {
+		{"fg", ch="あすみ", size="no", mode=3, path=":fg/asu/no/", file="asu_noa0210", ex05="asu_noa0010", face="a0052", head="asu_noa", x=-230, lv=2.2, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="あすみ", size="no", mode=3, path=":fg/asu/no/", file="asu_noa0210", ex05="asu_noa0010", face="a0054", head="asu_noa", x=-230, lv=2.2, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_asu_10013", ch="asu"},
+			},
+			ja = {
+				{
+					name = {"あすみ"},
+					"「先輩がたにはお土産を買ってきますので、楽しみにしていてくださいね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 44,
+	},
+	block_00009 = {
+		{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_noa0200", ex05="hiy_noa0000", face="a0041", head="hiy_noa", x=230, lv=2.2, id=10},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_noa0200", ex05="hiy_noa0000", face="a0001", head="hiy_noa", x=230, lv=2.2, id=10},
+			},
+			vl02 = {
+				{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_noa0200", ex05="hiy_noa0000", face="a0010", head="hiy_noa", x=230, lv=2.2, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_hiy_10027", ch="hiy"},
+			},
+			ja = {
+				{
+					name = {"妃愛"},
+					"「お兄ちゃんには安くておいしいアジャーリ餅を買ってきてあげるよ！　常磐さんと詩桜先輩とアメリ先輩には",
+					{"rt2"},
+					"うぅん龍など喜んでもらえるかしら」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 53,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「アメリはともかく、ひとり暮らしの相手にうぅん龍は重い……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 56,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"めっちゃ美味しいのは確かだけど、あれ、太くて長いからなあ……俺と妃愛の二人がかりでも１棹食べるのに苦戦する大きさ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 58,
+	},
+	block_00012 = {
+		{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_nob0200", ex05="hiy_nob0000", face="b0019", head="hiy_nob", x=230, lv=2.2, id=10},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_nob0200", ex05="hiy_nob0000", face="b0053", head="hiy_nob", x=230, lv=2.2, id=10},
+			},
+			vl02 = {
+				{"fg", ch="妃愛", size="no", mode=3, path=":fg/hiy/no/", file="hiy_nob0200", ex05="hiy_nob0000", face="b0054", head="hiy_nob", x=230, lv=2.2, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_hiy_10028", ch="hiy"},
+			},
+			ja = {
+				{
+					name = {"妃愛"},
+					"「またお兄ちゃんといっしょに旅行できたらいいのにねえ。生徒会活動は大変だったけど、ボランティア合宿楽しかったよねえ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 65,
+	},
+	block_00013 = {
+		{"fg", ch="あすみ", size="no", mode=3, path=":fg/asu/no/", file="asu_nob0200", ex05="asu_nob0000", face="b0022", head="asu_nob", x=-230, lv=2.2, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="あすみ", size="no", mode=3, path=":fg/asu/no/", file="asu_nob0200", ex05="asu_nob0000", face="b0032", head="asu_nob", x=-230, lv=2.2, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_asu_10014", ch="asu"},
+			},
+			ja = {
+				{
+					name = {"あすみ"},
+					"「あ、うん、すごく楽しかった……あんな機会は、もうないだろうなあ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 71,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「な、何故にこれから旅行をするのに、以前の思い出を超えられないのが前提？　合宿よりも素敵な思い出を二人で作ってきなさい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 74,
+	},
+	block_00015 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_002", wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule="rule_002r", vague=40, file="bg002a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しばらくすると妃愛のマネージャーさんがやってきて、",
+					{"rt2"},
+					"二人を車に乗せていった。彼女は旅をしないはずなのに、何故かお土産を渡された。生徒会の件の賄賂か。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 80,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今回は、俺も妃愛も家を留守にしなければならない場面を想定して、ペットシッターさんに資正のお世話をお願いした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 84,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"妃愛のマネージャーさんの紹介してくれた、信頼できる",
+					{"rt2"},
+					"シッターさんだ。今回練習してみて、預けるのが無理そうなら、俺と華乃の部屋へ連れていこう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 86,
+	},
+	block_00018 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_002", wait=500, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"bg", x=400, file="zbg009a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="華乃", size="z1", mode=3, resize=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0010", head="kan_z1a", lv=2.3, id=13, sync=0},
+		{"extrans", rule="rule_002r", vague=40},
+		{"bgm", file="bgm07"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10647", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あんた、去年の旅行はどんなかんじだったの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 104,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"お昼時に妃愛と錦さんの話をしていたら、ふと華乃から",
+					{"rt2"},
+					"尋ねられた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 106,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「どうって、華乃がいまなんとなく想像してる通りだと思うよ。なんかこうお寺とか見てまわって、それなりに楽しんできた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 109,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「ほら俺、寺社巡りとか好きだから、ちょっとうきうきしたよね。京の都って洛中に一つしかお城がないせいで、城郭巡り的な楽しみはなかったけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 112,
+	},
+	block_00022 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0022", head="kan_z1a", lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0032", head="kan_z1a", lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10648", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「そっかあ……あんた、歴史好きだもんね。趣味にはしゃぐ男の子いいなあ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 118,
+	},
+	block_00023 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0028", head="kan_z1b", lv=2.3, id=13},
+		{"fgact", ch="華乃", act="おじぎ", lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0002", head="kan_z1b", lv=2.3, id=13},
+			},
+			vl02 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0018", head="kan_z1b", lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10649", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「はあー後悔しても自業自得だけど、あんたといっしょに学園での旅行したかった……わりと憧れてた……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 126,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「いやあでも、趣味に浸りすぎて華乃を置いてけぼりにするのも嫌だし……いま思うと、俺の",
+					{"ruby", text="うんちく"},
+					"薀蓄",
+					{"/ruby"},
+					"聞かされて、新川もげんなりしてたんじゃないかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 129,
+	},
+	block_00025 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0050", head="kan_z1b", lv=2.3, id=13},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10650", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「話し相手いたんかい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 135,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"睨むとまでは言わないものの、ジトリとした目を向けられた。もしかして、俺が孤独な思いをしたのを前提に、慰めたかったのだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 137,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「話し相手っていうか、同じ班だった。他の班員のみんな、気づいたらはぐれてて、自由時間は新川と二人きりでさあ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 140,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「バスでも隣だったし、部屋でも他に話せる相手いなかったから……つって新川は、別の連中に大貧民とか呼ばれてたけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 143,
+	},
+	block_00029 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0040", head="kan_z1a", lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0002", head="kan_z1a", lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10651", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「二人で話してるのに、片方だけが大貧民に呼ばれるってどんな状況？　あんた別に嫌われてはなかったんでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 149,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「なんかトイレ行って戻ってきたら、新川がみんなと",
+					{"rt2"},
+					"トランプやっててさあ。なんとなく部屋へ入りづらくて、ホテルのロビー行って動画観てた……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 152,
+	},
+	block_00031 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0008", head="kan_z1a", lv=2.3, id=13},
+		{"fgact", ch="華乃", act="うなづく", lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0055", head="kan_z1a", lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10652", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あ、わかるわかる。よかった、私の知ってるあんただった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 159,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"交ぜてって言えば俺も頭数に入れてもらえたんだろうけど、みんなが盛りあがっていたので、声かけるタイミングを失ってしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 161,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"せめて後ろから覗くくらいすれば、新川が「入る？」と言ってくれたのかもしれないけど、その瞬間の皆の反応を想像したら怖くなって、ひとりを選んでしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 163,
+	},
+	block_00034 = {
+		{"msgoff"},
+		{"bg", x=400, zoom=120, file="zbg009a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="華乃", size="z2", mode=3, resize=1, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0022", head="kan_z2a", lv=2.4, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0035", head="kan_z2a", lv=2.4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10653", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「学園の旅行中、好きな人がロビーに一人きりで座ってるのとか最高なんだけど。それ見た瞬間、きゅーんってしちゃう。絶対となり座っちゃう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 174,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「あーそれ、想像するだけで嬉しいなあ。あのときに華乃がいて、当時から付きあってれば、手繋いで、こっそり外出かけたかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 177,
+	},
+	block_00036 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0048", head="kan_z2b", lv=2.4, id=13},
+		{"fgact", ch="華乃", act="ジャンプ", lv=2.4, id=13},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃は両手で口を押さえつつ、勢いよく仰けぞった。",
+					{"rt2"},
+					"その動きめっちゃオタ臭いけど大丈夫？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 182,
+	},
+	block_00037 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0051", head="kan_z2b", lv=2.4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0046", head="kan_z2b", lv=2.4, id=13},
+			},
+			vl02 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0042", head="kan_z2b", lv=2.4, id=13},
+				{"fgact", ch="華乃", act="うなづく", lv=2.4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10654", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「さい、最高なんだけど、なんであんたそのときに私を呼んでくれなかったのあんた！　ねえちょっと、私と付きあった状態のまま、去年の今日に戻りなさいよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 190,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「戻れるのなら余裕で戻りたいから、その方法教えてくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 193,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今日は教室内に人が少ないからか、カッコつけの華乃にしては珍しく、恋人の時間にしか出さない声を発していた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 195,
+	},
+	block_00040 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0028", head="kan_z2b", lv=2.4, id=13},
+		{"fgact", ch="華乃", act="おじぎ", lv=2.4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0020", head="kan_z2b", lv=2.4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10655", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あー今になってミリ先生の言葉が染みる。４月から登校してればよかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 202,
+	},
+	block_00041 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0038", head="kan_z2a", lv=2.4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0002", head="kan_z2a", lv=2.4, id=13},
+			},
+			vl02 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0028", head="kan_z2a", lv=2.4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10656", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「まあ、不登校じゃなければ生徒会に入ってたかわからないし、あんたと付きあえてないから、結果としてよかったけど……でもやっぱり想像するともったいない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 209,
+	},
+	block_00042 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0003", head="kan_z2a", lv=2.4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0022", head="kan_z2a", lv=2.4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10657", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「だからこそ、あんたとのキャンパスライフは追いかけたい……やって駄目なら仕方ないけど、なにかに遠慮して後から悔やんだんじゃ取りかえしつかないもんね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 215,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それが伝わっていれば、ミリさんも本望だろう。華乃は学園の行事を",
+					{"ruby", text="いと"},
+					"厭",
+					{"/ruby"},
+					"わなくなったし、登校日の一日一日を大切に過ごしているのだから。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 217,
+	},
+	block_00044 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0019", head="kan_z2b", lv=2.4, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0055", head="kan_z2b", lv=2.4, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10658", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あんたと制服着てお寺回りたかったな……今度二人で旅行しようね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 223,
+	},
+	block_00045 = {
+		{"msgoff"},
+		{"bg", file="bg009a", path=":bg/", sync=0},
+		{"fg", ch="華乃", size="z1", mode=3, resize=1, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0055", head="kan_z1b", x=-230, lv=2.3, id=9, sync=0},
+		{"fg", ch="広夢", size="no", mode=3, path=":fg/hir/no/", file="hir_noa0200", face="a0022", head="hir_noa", x=230, lv=2.2, id=10, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="広夢", size="no", mode=3, path=":fg/hir/no/", file="hir_noa0200", face="a0053", head="hir_noa", x=230, lv=2.2, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hir_10005", ch="hir"},
+			},
+			ja = {
+				{
+					name = {"広夢"},
+					"「教室でのろけてるの珍しいね。連休終わったばかりなのに、今から夏休みの話？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 237,
+	},
+	block_00046 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0045h", head="kan_z1a", x=-230, lv=2.3, id=9},
+		{"fgact", ch="華乃", act="quake", lv=2.3, id=9},
+		{"se", file="seコミ_ショック", id=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10659", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「うひゃひゃああい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 244,
+	},
+	block_00047 = {
+		{"fg", ch="華乃", my=40, mode=-1, lv=2.3, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"案の定恋人用の声をクラスメイトに聞かれた華乃は、視認できるほど羞恥に肌を染めながら、今にも泣きだしそうな表情を隠すように顔を伏せてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 248,
+	},
+	block_00048 = {
+		{"msgoff"},
+		{"bg", x=-400, file="zbg009a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="広夢", size="z1", mode=3, resize=1, path=":fg/hir/z1/", file="hir_z1a0200", face="a0053", head="hir_z1a", x=0, lv=2.3, id=13, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「夏休みなんて未来の話じゃなくて、むしろ去年を思いだしてた。ほら今、２年生が旅行してるから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 257,
+	},
+	block_00049 = {
+		{"fg", ch="広夢", size="z1", mode=3, path=":fg/hir/z1/", file="hir_z1a0200", face="a0052", head="hir_z1a", x=0, lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="広夢", size="z1", mode=3, path=":fg/hir/z1/", file="hir_z1a0200", face="a0054", head="hir_z1a", x=0, lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hir_10006", ch="hir"},
+			},
+			ja = {
+				{
+					name = {"広夢"},
+					"「ああ旅行。去年は楽しかったね。いっしょに回ってくれてありがとう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 263,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「いやこっちこそ。長々と薀蓄垂れて申し訳なかった……って、いま話してた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 266,
+	},
+	block_00051 = {
+		{"fg", ch="広夢", size="z1", mode=3, path=":fg/hir/z1/", file="hir_z1a0200", face="a0023", head="hir_z1a", x=0, lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="広夢", size="z1", mode=3, path=":fg/hir/z1/", file="hir_z1a0200", face="a0052", head="hir_z1a", x=0, lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hir_10007", ch="hir"},
+			},
+			ja = {
+				{
+					name = {"広夢"},
+					"「戦デレの聖地巡礼してるみたいで楽しかったよ。当時は和泉がやってるの知らなかったから、普通に感心してた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 272,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「戦国時代より、幕末の薀蓄ばっか語ってた気がする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 275,
+	},
+	block_00053 = {
+		{"fg", ch="広夢", size="z1", mode=3, path=":fg/hir/z1/", file="hir_z1a0200", face="a0053", head="hir_z1a", x=0, lv=2.3, id=13},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="広夢", size="z1", mode=3, path=":fg/hir/z1/", file="hir_z1a0200", face="a0055", head="hir_z1a", x=0, lv=2.3, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hir_10008", ch="hir"},
+			},
+			ja = {
+				{
+					name = {"広夢"},
+					"「じゃあ幕スペの聖地巡礼だ。池田屋ごっこしたかったね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 283,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"嫌がられるどころか血の滾るような提案をされてしまい、単純な俺はいい気分で浮かれてしまった。だって自分の",
+					{"rt2"},
+					"オタ知識晒したのに喜んでもらえるってさあ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 285,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人間、趣味の話ができる相手ほど尊いものもない。普段披露する機会のない知識であれば尚さらだ。今から新川と歴史巡りできないかな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 287,
+	},
+	block_00056 = {
+		{"msgoff"},
+		{"bg", file="bg009a", path=":bg/", sync=0},
+		{"fg", ch="広夢", size="no", mode=3, resize=1, path=":fg/hir/no/", file="hir_noa0200", face="a0053", head="hir_noa", x=-230, lv=2.2, id=9, sync=0},
+		{"extrans", time=500},
+		{"fg", ch="天梨", size="no", mx=40, mode=3, path=":fg/ame/no/", file="ame_nob0200", ex05="ame_nob0000", face="b0054", head="ame_nob", x=230, lv=2.2, id=10},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_nob0200", ex05="ame_nob0000", face="b0052", head="ame_nob", x=230, lv=2.2, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_ame_10035", ch="ame"},
+			},
+			ja = {
+				{
+					name = {"天梨"},
+					"「えっなになに去年の旅行の話？　私のインちゅたにそのとき食べた抹茶パフェ載せてあるけど見る？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 301,
+	},
+	block_00057 = {
+		{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_noa0200", ex05="ame_noa0000", face="a0052", head="ame_noa", x=230, lv=2.2, id=10},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_noa0200", ex05="ame_noa0000", face="a0035", head="ame_noa", x=230, lv=2.2, id=10},
+				{"fgact", ch="天梨", act="ジャンプ", lv=2.2, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_ame_10036", ch="ame"},
+			},
+			ja = {
+				{
+					name = {"天梨"},
+					"「てゆーか、今年も旅行あったら絶対このメンバーで班組んでるよね。えーっもう１回行きたい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 308,
+	},
+	block_00058 = {
+		{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_nob0210", ex05="ame_nob0010", face="b0006", head="ame_nob", x=230, lv=2.2, id=10},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_nob0210", ex05="ame_nob0010", face="b0010", head="ame_nob", x=230, lv=2.2, id=10},
+			},
+			vl02 = {
+				{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_nob0210", ex05="ame_nob0010", face="b0002", head="ame_nob", x=230, lv=2.2, id=10},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_ame_10037", ch="ame"},
+			},
+			ja = {
+				{
+					name = {"天梨"},
+					"「かのちん、夏休み入ったら勉強の合間に１日だけどっか行こうよー……あれ、かのちん？　なんか元気ないね？　かのちん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 315,
+	},
+	block_00059 = {
+		{"fg", ch="華乃", size="no", hoho="h", mode=1, resize=1, path=":fg/kan/no/", file="kan_noa0200", ex05="kan_noa0000", face="a0049h", head="kan_noa", lv=2.2, id=20},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10660", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「おねひゃい……いまのわらひは、そっとしろいれ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 322,
+	},
+	block_00060 = {
+		{"fg", ch="天梨", size="no", mode=3, path=":fg/ame/no/", file="ame_nob0200", ex05="ame_nob0000", face="b0054", head="ame_nob", x=230, lv=2.2, id=10},
+		{"fgact", ch="天梨", act="びっくり", lv=2.2, id=10},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"去年はグループの子たちと仲が良かったので、旅行中は楽しく過ごせたらしい。その後は授業が始まるまで、アメリの思い出語りオンステージが続いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 327,
+	},
+	block_00061 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_002", wait=500, file="black", path=":bg/", vague=40},
+		{"bg", speed=120000, rule="rule_002r", vague=40, file="zbg036a", path=":bg/", x2=640, y2=200, x=-640, y=200, ax=1280, ay=720, bx=-640, by=-360},
+		{"bgm", file="bgm32"},
+		{"fg", ch="華乃", size="no", mode=1, path=":fg/kan/no/", file="kan_noa0200", ex05="kan_noa0000", face="a0034", head="kan_noa", lv=2.2, id=20},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="no", mode=1, path=":fg/kan/no/", file="kan_noa0200", ex05="kan_noa0000", face="a0052", head="kan_noa", lv=2.2, id=20},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10661", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「制服着て二人で買い物するのっていいね……なんかちょっと今しか味わえない贅沢なことしてる気分」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 348,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「学生同士で一緒に暮らしてるなんて想像もしないだろうし、調理実習にしてはお菓子が多いし、文化祭はシーズンじゃないし、何目的の買い物だと思われただろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 351,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本日の放課後は、華乃と二人で夕食の買い物をしつつ帰ってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 353,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"このマンションは１階にスーパーがあるので便利だ。ただ近すぎるが故に、制服姿のまま生活感あふれる買い物をするのは心配だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 355,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"レジのおば様がたの間で「学生なのに同棲して！」なんて話題になったりするのだろうか。事実だから別にいいんだけどさ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 357,
+	},
+	block_00066 = {
+		{"msgoff"},
+		{"bg", file="zbg036a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="華乃", size="z1", mode=3, resize=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0022", head="kan_z1a", lv=2.3, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0055", head="kan_z1a", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10662", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「二人でスーパー行くたびに思うけど、ごはん作るための買い物が一番同棲してる感あるよね。あんたとお肉と野菜選ぶの大好き」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 368,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「同棲感あるっていうか、それ飛びこえて新婚感あるかも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 371,
+	},
+	block_00068 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0035h", head="kan_z1b", lv=2.3, id=9},
+		{"fgact", ch="華乃", act="うんうん", lv=2.3, id=9},
+		{"se", file="se打撃03", id=1, vol=50},
+		{"text"},
+		delay = {
+			[50] = {
+				{"se", file="se打撃03", id=2, vol=50},
+			},
+		},
+		text = {
+			ja = {
+				{
+					"耳まで赤くしたとろ顔で、二の腕をばしばしと叩かれた。テンションが上がりすぎたせいで力の加減を間違えたらしく、ちょっぴり痛いくらいだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 378,
+	},
+	block_00069 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0006h", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10663", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「今日はもう締切間近の仕事もないし、めいっぱいいちゃつくからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 383,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃は宣言通りにエロゲの原画作業を終わらせた。都合１ヵ月で線画４０枚。締切を１ヵ月早めての納品に、相手の会社はひどく驚いたらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 385,
+	},
+	block_00071 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0010", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0008h", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10664", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あれ？　ていうかあんた、荷物取りに１回家戻らなくても、いい……の……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 391,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃は質問を口にしかけたその途中で、またなにか別の気づきがあったらしく、はっとした表情のまま動きを止めた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 393,
+	},
+	block_00073 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0020h", head="kan_z1a", lv=2.3, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして耳まで赤い肌の色を保ったまま、目を逸らした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 397,
+	},
+	block_00074 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0002h", head="kan_z1a", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10665", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あ、明日の朝って、この部屋から登校するんだよね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 402,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「う、うん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 405,
+	},
+	block_00076 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0019h", head="kan_z1a", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10666", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「……二人で」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 410,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「うん。そのつもり」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 413,
+	},
+	block_00078 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0018h", head="kan_z1a", lv=2.3, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"自分で口にしておきながら、明日の朝の光景を想像して恥ずかしくなったらしい。華乃は買い物袋を手にしたまま、微動だにしなくなった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 417,
+	},
+	block_00079 = {
+		{"se", file="se抱きつく", id=1},
+		{"msgoff"},
+		{"bg", zoom=120, file="zbg036a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, resize=1, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0018h", head="kan_z2a", lv=2.4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なので、俺から抱きしめた。買い物袋をそっと華乃の手から外して床へ下ろし、両の腕ごと包みこんだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 427,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「なんか、うん……華乃のこと大好きなんだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 430,
+	},
+	block_00081 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0012h", head="kan_z2a", lv=2.4, id=9},
+		{"fgact", ch="華乃", act="うなづく", lv=2.4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10667", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「う、うん。大好きなんだ……けど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 436,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「今ははっきり『愛してる』って実感が湧いた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 439,
+	},
+	block_00083 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0022h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0032h", head="kan_z2a", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10668", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「うん……私も抱きしめられたときに、ドキドキするよりも胸にじんときた。好きな人と同じ部屋へ帰ってきたんだなあ……って」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 445,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「結婚してもいいって思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 448,
+	},
+	block_00085 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0034h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0023h", head="kan_z2a", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10669", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「受験も終わってないのに、それは早すぎ。まだふわっとしてる。あんたがちゃんとお仕事始めてからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 454,
+	},
+	block_00086 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0052h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0054h", head="kan_z2a", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10670", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「でも、今の時点の精一杯の愛情表現として嬉しかった。私も早くあんたと暮らしたいって思ってるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 460,
+	},
+	block_00087 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0011h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"キスをして、しばらくそのまま突ったっていた。",
+					{"rt2"},
+					"やがて、華乃の質問に答えていなかったのを思いだした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 464,
+	},
+	block_00088 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0053h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「家には１回帰ろうと思ったんだけど、華乃と買い物して、同じ部屋へただいましたいなと思って」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 469,
+	},
+	block_00089 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0022h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10671", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ああ、ありがと……そんな理由なら嬉しい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 474,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「だけどもう満足したし、暗くなる前に服取ってくる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 477,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"暗くなる前にとは言ったものの、５月中頃の今の時期、",
+					{"rt2"},
+					"１７時になっても外はまだ明るい。バスの時間が上手く",
+					{"rt2"},
+					"噛みあえば、明るいうちに戻ってこられそうだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 479,
+	},
+	block_00092 = {
+		{"msgoff"},
+		{"bg", file="bg036a", path=":bg/", sync=0},
+		{"fg", ch="華乃", size="no", hoho="h", mode=3, resize=1, path=":fg/kan/no/", file="kan_noa0200", ex05="kan_noa0000", face="a0023h", head="kan_noa", lv=2.2, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「じゃあ行ってくる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 488,
+	},
+	block_00093 = {
+		{"fg", ch="華乃", size="no", hoho="h", mode=3, path=":fg/kan/no/", file="kan_nob0210", ex05="kan_nob0010", face="b0055h", head="kan_nob", lv=2.2, id=9},
+		{"fgact", ch="華乃", act="うなづく", lv=2.2, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"玄関までお見送りしてくれるものかと思いきや、華乃はその場に立ったまま手を振るだけだった。ちょっと寂しい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 493,
+	},
+	block_00094 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_001", wait=250, file="black", path=":bg/", vague=40},
+		{"se", file="seドア(室内開き)", id=1},
+		{"bg", rule="rule_001", vague=40, file="bg002a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"家に帰っても当然のごとく妃愛はおらず、資正の鳴き声すらせず、なんだか我が家の食卓ががらんどうに感じられた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 505,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"部屋へ戻って３日分の着替えを鞄に詰めつつ、出かける前に両親の位牌の前で手を合わせた。数日ほど家を留守にします。いってきます。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 507,
+	},
+	block_00096 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_001", wait=250, file="black", path=":bg/", vague=40},
+		{"bg", speed=120000, rule="rule_001", vague=40, file="zbg017b", path=":bg/", x2=-640, y2=100, x=640, y=100, ax=1280, ay=720, bx=-640, by=-360},
+		{"bgm", file="bgm08"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"駅前へ戻ってきたころはさすがに日が暮れかけていて、なにかしらの買い物袋を手にしたお母様方が、商店街近くの焼き鳥屋で、惣菜を買うための列を作っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 518,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃へのお土産用にたこ焼きの看板が目に入ったけど、このあと沢山キスをするのに青のりが歯にくっついていたんじゃなあと、心を鬼にして買うのをやめた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 520,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今日は溜まりに溜まった愛情を発散するぞ……と意気込みつつ、たこ焼きのソースを唇につけたまま目を閉じる華乃の顔を想像して噴きだしてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 522,
+	},
+	block_00099 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_001", wait=250, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"bg", file="bg036a", path=":bg/", sync=0},
+		{"fg", ch="華乃", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0200", ex05="kan_nob0000", face="b0018", head="kan_nob", lv=2.2, id=9, sync=0},
+		{"extrans", rule="rule_001", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「はれっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 537,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"２２階分の高さを縦に移動して愛の巣へ戻ってみれば、今度は玄関まで出迎えてくれたものの、華乃は制服を着たままだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 539,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「着替えなかったんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 542,
+	},
+	block_00102 = {
+		{"fg", ch="華乃", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", ex05="kan_nob0010", face="b0008", head="kan_nob", lv=2.2, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", ex05="kan_nob0010", face="b0019", head="kan_nob", lv=2.2, id=9},
+			},
+			vl02 = {
+				{"fg", ch="華乃", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", ex05="kan_nob0010", face="b0010", head="kan_nob", lv=2.2, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10672", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「え、あれ……ほ、ほんとだ。あんたこそ、制服のままだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 549,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「バスの時間がギリギリだったせいで、荷物取って、仏壇の花の水だけ替えて、すぐ家を出たから……着替える時間がなくて。華乃に少しでも早く会いたかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 552,
+	},
+	block_00104 = {
+		{"fg", ch="華乃", size="no", mode=3, path=":fg/kan/no/", file="kan_nob0210", ex05="kan_nob0010", face="b0023", head="kan_nob", lv=2.2, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10673", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ありがと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 557,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃は前髪を指でつまみ、なにか確かめるみたいにくねくねといじっていた。なんかちょっと濡れてる……？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 559,
+	},
+	block_00106 = {
+		{"msgoff"},
+		{"bg", file="zbg036a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="華乃", size="z1", mode=3, resize=1, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0023", head="kan_z1b", lv=2.3, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「華乃は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 568,
+	},
+	block_00107 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0002", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0038", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10674", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あーうん……あんたが部屋を出たあと、この環境が幸せすぎて、呆然としてたみたいで……しばらくここでずっと突ったってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 574,
+	},
+	block_00108 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0028", head="kan_z1a", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0002", head="kan_z1a", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10675", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あんたが戻ってくるまでに夕食作っておくつもりだったんだけど……ごめん。お、お米だけは炊いたよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 580,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「なんでそんなにぼーっとしてたの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 583,
+	},
+	block_00110 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0038", head="kan_z1a", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0019", head="kan_z1a", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10676", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「うん。さっき、あんたに言われたときは、まだ早いなんて言っちゃったけど……やっぱり、結婚なんて言葉は嬉しすぎたみたいで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 589,
+	},
+	block_00111 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0012", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0029", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10677", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「えと、ちょっと怖いんだけど、あんたがいなくなったあとに涙出てきちゃって……なんかもう、こらえようとすればするほどぼろぼろ出てきちゃって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 595,
+	},
+	block_00112 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0019", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0005", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10678", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「二人で暮らしてる姿も、その先も、すごく簡単に想像できちゃって……私、あの人とならずっといっしょにいられるなって。そう、思っちゃって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 601,
+	},
+	block_00113 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0028", head="kan_z1b", lv=2.3, id=9},
+		{"fgact", ch="華乃", act="おじぎ", lv=2.3, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこまで口にした華乃は、前髪をいじっていた指で目の端を擦った。そうか、前髪が濡れていたのは、涙のあとを消そうと顔を洗ったからだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 606,
+	},
+	block_00114 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0055", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10679", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「大好き」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 611,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「俺も。華乃が大好き。今だってすごく愛しくて可愛い。ひとりで泣いちゃう華乃、かわいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 614,
+	},
+	block_00116 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0012h", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0020h", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10680", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ご、ごめん。自分から打ちあけといてなんだけど、それもう言わないで。改めて思いだすと、ひとりで泣いてるの、ちょっと痛いし、怖いし……恥ずかしいし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 620,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「華乃を一人きりにするんじゃなかった。泣いてる華乃を思いっきり抱きしめたかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 623,
+	},
+	block_00118 = {
+		{"fg", ch="華乃", size="z2", hoho="h", my=40, mode=3, resize=1, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0009h", head="kan_z2b", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0014h", head="kan_z2b", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10681", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「やーっ！　やーめーて！　やめて！　ばか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 630,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「可愛すぎるんだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 635,
+	},
+	block_00120 = {
+		{"se", file="se抱きつく", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃が俺の胸をぽかぽか叩きはじめたので、我慢できなくなって抱きしめた。というか、抱きしめるだけで我慢なんてできなくなっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 639,
+	},
+	block_00121 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0008h", head="kan_z2b", lv=2.4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10682", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「あ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 644,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「ごめん。無理。今日はめっちゃ抱く」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 647,
+	},
+	block_00123 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0002h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10683", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「が、我慢できない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 652,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「できない。最後までしたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 655,
+	},
+	block_00125 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0022h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0008h", head="kan_z2a", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10684", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「い、いいよ。あ、でも、その前にシャワー浴びる？",
+					{"rt2"},
+					"今日けっこう暑かったし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 661,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「このままがいい。お互い制服を着たまま、華乃の感じてくれた幸せを噛みしめたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 664,
+	},
+	block_00127 = {
+		{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0034h", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0018h", head="kan_z2a", lv=2.4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="華乃", size="z2", hoho="h", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0001h", head="kan_z2a", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10685", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「う、うん、わかった……ただその前に、ちょっとだけ",
+					{"rt2"},
+					"真面目な話させて。あの、金曜日に出版社さん行って、ラノベの依頼受けてくるつもりなんだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 671,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「あ、メールあったんだ。おめでとう……でいいのかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 674,
+	},
+	block_00129 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0023", head="kan_z2b", lv=2.4, id=9},
+		{"fgact", ch="華乃", act="うなづく", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0210", ex05="kan_z2b0010", face="b0052", head="kan_z2b", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10686", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「うん、ありがとう。お受けしたいですって返事もした。条件と詳細を聞きに、金曜日は編集部へお邪魔してくる。詩桜先輩も同席するって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 681,
+	},
+	block_00130 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0039", head="kan_z2b", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0018", head="kan_z2b", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10687", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「で、メールの内容を見ても、詩桜先輩の言う通り、夏の発売を目標にしてるみたいで……受験勉強もあるのに、下半期が忙しくなりそうで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 687,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「じゃあ、発売の時期をずらしてもらう形で交渉するかんじ？　それが無理ならお断りする……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 690,
+	},
+	block_00132 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0002", head="kan_z2b", lv=2.4, id=9},
+		{"fgact", ch="華乃", act="いいえ", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2b0200", ex05="kan_z2b0000", face="b0038", head="kan_z2b", lv=2.4, id=9},
+				{"fgact", ch="華乃", act="おじぎ", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10688", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ううん。夏期講習は行けたら行くけど、どうしても作業が被りそうなら、集中的に勉強する期間を別の時期に用意しようかなって……ええと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 698,
+	},
+	block_00133 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0038", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0002", head="kan_z2a", lv=2.4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10689", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「夏期講習よりも時間の制約がなくて、私のペースに合わせて勉強できて、しかも予備校並みに学力の向上が期待できる……家庭教師に来てもらおうと思ってて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 704,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「おお家庭教師。そんなに信頼できる人がいるんだ？",
+					{"rt2"},
+					"というかこの部屋へ人を入れていいんだ……？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 707,
+	},
+	block_00135 = {
+		{"fg", ch="華乃", size="z2", mode=3, path=":fg/kan/z2/", file="kan_z2a0200", ex05="kan_z2a0000", face="a0034", head="kan_z2a", lv=2.4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10690", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「詩桜先輩に」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 712,
+	},
+	block_00136 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「詩桜先輩！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 717,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"華乃の提案に驚きはしたものの、言われてみれば条件に叶っていると気が付いた。今は時間に余裕があり、すぐ近くに住んでいて、文系に強い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 719,
+	},
+	block_00138 = {
+		{"bg", file="white", path=":bg/"},
+		{"bg", file="bg008a", path=":bg/", sync=0},
+		{"fg", ch="詩桜", size="no", mode=3, path=":fg/shi/no/", file="shi_noa0500", ex05="shi_noa0000", face="a0053", head="shi_noa", lv=2.2, id=13, sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"fg", ch="華乃", size="z1", mode=1, resize=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0052", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0038", head="kan_z1a", lv=2.3, id=20},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10691", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「詩桜先輩には相談して、もう了承済みで。授業料もお支払いすることになってる。先輩の学力を考えたら格安だけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 733,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「話が早い……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 736,
+	},
+	block_00140 = {
+		{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0034", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0023", head="kan_z1a", lv=2.3, id=20},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10692", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「まあ、先輩の依頼を受ける条件にさせてもらったのもあって。編集部は挟まないで、個人的に出した条件だけど……先輩、二つ返事だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 742,
+	},
+	block_00141 = {
+		{"fg", ch="詩桜", size="no", mode=3, path=":fg/shi/no/", file="shi_noa0510", ex05="shi_noa0010", face="a0055", head="shi_noa", lv=2.2, id=13},
+		{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0022", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0052", head="kan_z1a", lv=2.3, id=20},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10693", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「やる気があればあるだけ学力が伸びるよう、責任を持って受験の前日まで勉強教えてくれるって……私だけじゃなくて、あんたとアメリも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 750,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「俺も！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 753,
+	},
+	block_00143 = {
+		{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0019", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10694", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「８月に仕事が入ると、私が夏期講習行けなくなるから……その代わりに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 758,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ああそうか、夏期講習の代わりに……予備校並にと言ってしまうのは、先輩を過剰評価し過ぎかもしれないけど、時間と場所の融通が利くのはでかい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 760,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それに華乃の説明を聞く限り、夏休みの間だけではなく、２月まで面倒を見てくれるという話だ。これはかなりおいしい条件では……？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 762,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「それはありがたい……ぜひとも、俺も先輩の授業に参加したい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 765,
+	},
+	block_00147 = {
+		{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0052", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10695", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「私にはスケジュールの都合があるけど、あんたは先輩の授業だけじゃなくて、予備校の夏期講習も受けてもらっていいからね……むしろ行ってきて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 770,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「了解。ただ先輩の授業は厳しそう……っていうか、容赦なさそう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 773,
+	},
+	block_00149 = {
+		{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0034", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10696", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「うん、そこはね。身内だからって甘やかす性格でもないし。私たちも厳しくしてもらわないと意味ないし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 778,
+	},
+	block_00150 = {
+		{"fg", ch="華乃", size="z1", mode=1, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0053", head="kan_z1a", lv=2.3, id=20},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="詩桜", size="no", mode=3, path=":fg/shi/no/", file="shi_noa0510", ex05="shi_noa0010", face="a0015", head="shi_noa", lv=2.2, id=13},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10697", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「先輩からの伝言。『君たちへの借りを返すつもりで授業に臨むから、楽しみにしておけ』」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 785,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「うん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 788,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「生徒会の件で迷惑をかけた借りを返す」というお詫びの意味なんだろうけど「三浦大根と罵られた借りを返す」意味に聞こえるのは何故だろう。恐ろしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 790,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと震えてはみたものの、華乃、先輩、アメリと一緒に勉強できるのは嬉しい。また大好きな人たちと集まれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 792,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"日によっては和泉家を勉強会の場に提供しよう。錦さんも呼べばいい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 794,
+	},
+	block_00155 = {
+		{"bg", file="white", path=":bg/"},
+		{"msgoff"},
+		{"bg", file="zbg036a", path=":bg/", ax=1280, ay=720, bx=-640, by=-360, sync=0},
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0038", head="kan_z1a", lv=2.3, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0002", head="kan_z1a", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10698", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ごめんね、あんたに相談するのが最後になっちゃって。今日会えるから、夕食のあとにでも話そうと思ってて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 807,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「ああ、全然。てことは、詩桜先輩だけじゃなくて、",
+					{"rt2"},
+					"アメリにも相談済み？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 810,
+	},
+	block_00157 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1a0200", ex05="kan_z1a0000", face="a0023", head="kan_z1a", lv=2.3, id=9},
+		{"fgact", ch="華乃", act="うなづく", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10699", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「うん。あの子も一人だと寂しいから、私と勉強するって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 816,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「寂しいからかい。いや、アメリがそう決めたのならそれでいいけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 819,
+	},
+	block_00159 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0038", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10700", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ま、受験は水物だし、勉強にはここまでやればいいっていうゴールがないから、絶対安全なんて言えないけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 824,
+	},
+	block_00160 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0006", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0210", ex05="kan_z1b0010", face="b0055", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10701", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「後悔しないだけの準備はできたし、エロゲの線画作業は終わったし、ソシャゲの仕事はいま止めてるし。シキちゃんのグッズは依頼が来たら一生がんばる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 830,
+	},
+	block_00161 = {
+		{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0052", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0023", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10702", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「てことで、全ての問題は片付いたし。あとはあんたと",
+					{"rt2"},
+					"幸せに暮らすだけなんだけど、叶えてくれる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 836,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"智宏"},
+					"「目がハートになるくらい、めっちゃくちゃ幸せにしてみせる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 839,
+	},
+	block_00163 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0009h", head="kan_z1b", lv=2.3, id=9},
+		{"fgact", ch="華乃", act="びっくり", lv=2.3, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0020h", head="kan_z1b", lv=2.3, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10703", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「ぁちょっ……！　そういう即物的な幸せじゃなくって、さあっ……もう！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 847,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"普段はクソ雑魚メンタルなくせに、俺と暮らすためにここまでしっかり準備していたこの恋人を、とてもとても愛しく想った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 849,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな恋人と始める同棲生活が、今から楽しみで仕方ない。つっても受験終えて、卒業して３月を終えるまでにも、ほぼ毎日入り浸るだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 851,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ただ、受験に落ちたらまた色々我慢しないといけなくなるので……どうかもう１年勉強しなくて済むよう、無事合格しますように！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 853,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とりあえずこの３日間は乾く間もないほどに華乃と愛しあって、来週から勉強頑張ろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 855,
+	},
+	block_00168 = {
+		{"fg", ch="華乃", size="z1", hoho="h", mode=3, path=":fg/kan/z1/", file="kan_z1b0200", ex05="kan_z1b0000", face="b0022h", head="kan_z1b", lv=2.3, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_10704", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"華乃"},
+					"「いっぱいかわいがってね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 860,
+	},
+	block_00169 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="rule_002", wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="02_華乃10_h03"},
+		{"text"},
+		linkback = "block_00168",
+		line = 867,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
