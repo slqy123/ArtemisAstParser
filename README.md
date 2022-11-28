@@ -1,7 +1,7 @@
 # ArtemisAstParser
 Convert Artemis Engine's .ast script file to json
 
-This tool is built by `click`, and `lex-yacc`, only test on `ハミダシクリエイティブ凸`
+This tool is built by `click` and `lex-yacc`, and only test on `ハミダシクリエイティブ凸`
 
 # Usage
 You use the cli tool `parser.py` and type
