@@ -19,7 +19,7 @@ def t_ignore_VER(t):
 
 
 def t_STRING(t):
-    r'"[^"]*"'
+    r'"(\\"|[^"])*"'
     t.value = t.value[1:-1]
     return t
 
@@ -60,7 +60,7 @@ def p_arg(p):
 def p_list_name(p):
     """name : LL STRING RL
     | LL NUMBER RL"""
-    p[0] = str(p[2])
+    p[0] = f'[{p[2]}]'
 def p_name_NAME(p):
     """name : NAME"""
     p[0] = p[1]

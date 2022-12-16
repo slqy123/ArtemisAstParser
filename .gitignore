@@ -1,0 +1,9 @@
+/.idea
+/.vscode
+/out
+/script
+/script2
+/__pycache__
+*/__pycache__
+
+

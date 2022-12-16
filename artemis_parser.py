@@ -27,7 +27,7 @@ def parse(src: str, output: str, encoding: str):
     else:
         srcs = [src]
 
-    from ast import Ast
+    from artemis_ast import Ast
     ast = Ast()
     for src in srcs:
         dst = output
