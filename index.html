@@ -37,9 +37,9 @@
         async function evaluatePython() {
             let pyodide = await pyodideReadyPromise;
             try {
-                // let response = await fetch("artemis_parser.py"); // .zip, .whl, ...
-                // let buffer = await response.arraybuffer();
-                // await pyodide.unpackArchive(buffer); // by default, unpacks to the current dir
+                let response = await fetch("ast.zip"); // .zip, .whl, ...
+                let buffer = await response.arraybuffer();
+                await pyodide.unpackArchive(buffer); // by default, unpacks to the current dir
                 pkg = pyodide.pyimport("artemis_parser");
                 res = pkg.parse()
                 addToOutput(res);
