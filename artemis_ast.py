@@ -1,7 +1,7 @@
 from ply.lex import lex
 from ply.yacc import yacc
 
-tokens = ('NUMBER', 'COMMA', 'LPAREN', 'RPAREN', 'NAME', 'EQUAL', 'STRING', 'LL', 'RL')
+tokens = ('NUMBER', 'COMMA', 'LPAREN', 'RPAREN', 'NAME', 'EQUAL', 'STRING', 'LL', 'RL', "STRING2")
 
 t_ignore = ' \t'
 t_COMMA = r','
@@ -17,10 +17,19 @@ def t_ignore_VER(t):
     r'astver[^\n]+\n'
     return
 
+def t_ignore_NAME(t):
+    r'astname[^\n]+\n'
+    return
+
 
 def t_STRING(t):
     r'"(\\"|[^"])*"'
     t.value = t.value[1:-1]
+    return t
+
+def t_STRING2(t):
+    r'\[\[[^]]*\]\]'
+    t.value = t.value[2:-2]
     return t
 
 
@@ -46,6 +55,7 @@ def t_error(t):
 
 def p_kwarg(p):
     """kwarg : name EQUAL STRING
+    | name EQUAL STRING2
     | name EQUAL NUMBER
     | name EQUAL block
     | name EQUAL arg"""
@@ -54,13 +64,17 @@ def p_kwarg(p):
 
 def p_arg(p):
     """arg : STRING 
+    | STRING2
+    | NUMBER
     | block"""
     p[0] = p[1]
 
 def p_list_name(p):
     """name : LL STRING RL
+    | LL STRING2 RL
     | LL NUMBER RL"""
     p[0] = f'[{p[2]}]'
+
 def p_name_NAME(p):
     """name : NAME"""
     p[0] = p[1]
@@ -124,4 +138,4 @@ class Ast:
 
 if __name__ == '__main__':
     ast = Ast()
-    ast.parse('astver = 2.0\nast = {"123",}')
+    ast.parse('astver = 2.0\nastname = "ast"\nast = {"123",}')
